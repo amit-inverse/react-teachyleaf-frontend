@@ -14,7 +14,7 @@ function AppRouter() {
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route element={<NotFound />} />
+                <Route path='*' element={<NotFound />} />
             </Routes>
         </Router>
     );
